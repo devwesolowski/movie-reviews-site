@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Out of 10 - Movie Review Site</title>
@@ -15,29 +16,35 @@
   </head>
   <body>
     <div class="flex-container">
-      <div class="navigation-bar">
+      <nav class="navigation-bar">
         <img src="content/main/ootLogo.png" alt="Out of Ten Logo" id="nav-logo"/>
-        <div class="menu" id="main-menu">
-          <a href="#">MOVIES</a>
-          <a href="#">LATEST</a>
-          <a href="#">TOP 10</a>
-          <a href="#">NEWS</a>
-        </div>
-        <form action="#">
+        <ul class="menu" id="main-menu">
+          <li><a href="#">MOVIES</a></li>
+          <li><a href="#">LATEST</a></li>
+          <li><a href="#">TOP 10</a></li>
+          <li><a href="#">NEWS</a></li>
+        </ul>
+        <form action="#" id="search-bar">
           <input
             type="text"
             class="text-input search-input"
             id="searchbar"
             name="search"
+            placeholder="Search movies, actors, directors, genre..."
           />
         </form>
-        <div class="menu" id="account-menu">
-          <a href="#">HOME</a>
-          <a href="#">MY MOVIES</a>
-          <a href="#">ACCOUNT</a>
-        </div>
-        <img src="content/main/menuButton.png" alt="Account Menu Button" />
-      </div>
+        <a id="account-menu-button"><img src="content/main/menuButton.png" alt="Account Menu Button" /></a>
+        <ul class="menu" id="account-menu">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">MY MOVIES</a></li>
+          <li><a href="#">ACCOUNT</a></li>
+        </ul>
+        <ul class="menu" id="login-menu">
+          <li><a href="#" class="signup-button">SIGN IN</a></li>
+          <li><span class="divider"></span></li>
+          <li><a href="#">SIGN UP</a></li>
+        </ul>
+      </nav>
       <div class="big-movie-container">
         <div class="oot-rating-container">
           <div id="oot-avg-rating">
