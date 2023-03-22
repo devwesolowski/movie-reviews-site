@@ -69,6 +69,7 @@ body {
 #account-menu:hover + #login-menu {
   display: none;
 }
+
 #login-menu {
   margin-left: 6.5rem;
 }
@@ -103,8 +104,7 @@ input[type="text"] {
   font-weight: 350;
 }
 
-input[type="text"]:focus,
-textarea:focus {
+input[type="text"]:focus {
   box-shadow: 0 0 3px #dcdadb;
   padding: 3px 3px 3px 3px;
   margin: 2px 1px 2px 2px;
